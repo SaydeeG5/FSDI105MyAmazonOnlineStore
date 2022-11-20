@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Online Store</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> myAmazon Online Stores</h1>
+
+        </header>
+        <main>
+            <h2>Add a new transaction</h2>
+            <div>
+                <input type="text" placeholder="Product's Name" id="txtProduct">
+                <p id="errormsg1"></p>
+                <input type="number" placeholder="Price" id="txtPrice">
+                <p id="errormsg2"></p>
+                
+                <button onclick="register();">Add Product</button>
+            </div>
+
+        <h2>Products in the Cart<sup id="productsInCart"></sup></h2>
+        <table>
+            <thead>
+                <th>#</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Action</th>
+               
+
+            </thead>
+           
+            
+            <tbody id="productsTable">
+            </tbody>
+
+        
+        </main>
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
